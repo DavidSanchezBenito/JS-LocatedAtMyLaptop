@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+var num1=parseFloat(prompt("Introduce el primer número"));
+var num2=parseFloat(prompt("Introduce el segundo número"));
+
+
+var operacion=prompt("Qué operación deseas realizar? [+ | - | * | / ]");
+
+
+if (isNaN(num1) || isNaN(num2)) { //Nan = Not a Number
+    alert("Debes de escribir un número en ambos campos.");
+} else {
+    switch (operacion) {
+        case "+":
+            operacion=num1+num2;
+            alert("El resultado de " + num1 + " + " + num2 + " es " + operacion);
+            break;
+        
+        case "-":
+            operacion=num1-num2;
+            alert("El resultado de " + num1 + " - " + num2 + " es " + operacion);
+            break;
+         
+        case "*":
+            operacion=num1*num2;
+            alert("El resultado de " + num1 + " * " + num2 + " es " + operacion);
+            break;
+        
+        case "/":
+            operacion=num1/num2;
+            alert("El resultado de " + num1 + " / " + num2 + " es " + operacion);
+            break;    
+    
+        default: alert("Esa operación no está disponible.");
+            break;
+    }
+}
+
+
+</script>
+
+
+
+</body>
+</html>

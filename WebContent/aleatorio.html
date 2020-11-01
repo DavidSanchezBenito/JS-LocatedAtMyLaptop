@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+
+</head>
+<body>
+<table width="25%" border="0">
+<tr>
+	<td><input type="text" name="textfield" id="c_mensaje"></td>
+	<td><input type="text" name="textfield2" id="c_intentos">
+	</td></tr>
+</table>
+<script>
+var mensaje=document.getElementById("c_mensaje");
+var intentosConsumidos=document.getElementById("c_intentos");
+var aleatorio= Math.round(Math.random()*100);
+alert(aleatorio);  //para q me muestre el numero
+
+var numero=0;
+var intentos=0;
+
+do{
+	numero=prompt("introduce un numero de 0 A 100");
+	
+	if (aleatorio> numero){
+		mensaje.value="Mas alto";
+		mensaje.style.fontSize="18px";
+		}	if (aleatorio<numero){
+		mensaje.value="mas bajo";
+		mensaje.style.fontSize="12px";
+		
+}
+		intentos++;
+		intentosConsumidos.value=intentos;
+		intentosConsumidos.style.fontSize="18px";
+		intentosConsumidos.style.color="red";
+		intentosConsumidos.style.textAlign="center";
+
+}while(aleatorio!=numero);
+//document.write("has acertado pedra!!! en intentos: " + intentos);
+mensaje.value="correcto!";
+mensaje.style.color="blue";
+
+
+</script>
+
+</body>
+</html>

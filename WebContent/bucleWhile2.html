@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<style>
+#contenedor {
+	width: 25%;
+	background-color: #ffc;
+	margin: auto;
+	padding: 15px;
+}
+</style>
+<script>
+var nombre, edad, poblacion;
+
+nombre= prompt("introduce tu nombre please","");
+while(!isNaN(nombre)){
+	nombre= prompt("introduce tu nombre correctamente");
+	
+}
+edad= prompt("introduce tu edad","edad");
+
+	while (edad<=0 || edad>105 ||isNaN(edad)) {
+	edad=prompt("introduce una edad validad");
+}
+poblacion=prompt("introduce tu poblacion","poblacion");
+while(!isNaN(poblacion)){
+	poblacion= prompt("introduce tu poblacion correctamente");
+	
+}
+
+
+</script>
+
+
+</head>
+<body>
+	<div id=contenedor>
+		<p>Nombre:
+<script>
+document.write(nombre);
+</script></p>
+
+		<p>edad:
+<script>
+document.write(edad);
+</script></p>
+		<p>Poblacion:
+<script>
+document.write(poblacion);
+</script></p>
+	</div>
+</body>
+</html>

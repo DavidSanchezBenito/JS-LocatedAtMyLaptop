@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Usando Arrays</title>
+<link rel="stylesheet" href="css/micss.css">
+<script>
+var articulos= ["cinturon", "calcetines", "tanga", "picardias"];
+	
+</script>
+</head>
+
+<body>
+<div class="contenedor">
+  <div class="header">
+    <p class="logo">JavaScript Arrays <i class="mm">Píldoras Informáticas
+     </p>
+  </div>
+  <div class="contenido">
+    <div class="principal">
+      <h1>Manejando Arrays</h1>
+      <script>
+document.write("<p>");
+document.write("las longitud del array es: " + articulos.length + "<br/>");
+document.write("la posicion 0 del array es:  " + articulos[0]);
+document.write("</p>");
+
+document.write("<p> el ultimo elemento es " + "<strong>" +  articulos[articulos.length-1] + " </strong> </p> <br/>");
+
+document.write("<p> agregamos un elemento mas al array <br/> ");
+articulos.push(prompt("introduce tu articulo para el final"));
+articulos.unshift("ultimo elemento");
+//articulos.pop;
+
+document.write(articulos[0] + "<br/>");
+document.write(articulos[1] + "<br/>");
+document.write(articulos[2] + "<br/>");
+document.write(articulos[3] + "<br/>");
+document.write(articulos[4] + "<br/>");
+document.write(articulos[5] + "<br/>");
+//articulos.push(prompt("introduce otro articulo"));
+
+
+alert("borramos el primer elemento");
+articulos.shift();
+document.write(articulos[0] + "<br/>");
+document.write(articulos[1] + "<br/>");
+document.write(articulos[2] + "<br/>");
+document.write(articulos[3] + "<br/>");
+document.write(articulos[4] + "<br/>");
+document.write(articulos[5] + "<br/>");
+//document.write(articulos[articulos.length-1]);
+
+alert("ahorra borro el ultimo");
+articulos.pop;
+document.write(articulos[0] + "<br/>");
+document.write(articulos[1] + "<br/>");
+document.write(articulos[2] + "<br/>");
+document.write(articulos[3] + "<br/>");
+document.write(articulos[4] + "<br/>");
+
+		
+		
+		
+	  </script>
+     </div>
+  </div>
+  
+</div>
+</body>
+</html>

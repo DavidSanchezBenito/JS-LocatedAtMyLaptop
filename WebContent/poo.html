@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<input type="button" id="boton1">
+<input type="button" id="boton2">
+<input type="text" id="micuadro">
+
+<script>
+var miboton = document.getElementById("boton1");
+miboton.style.width="100px";
+miboton.style.height="100px";
+//miboton.style.backgroundColor="red";
+var miboton1 = document.getElementById("boton2");
+miboton1.style.width="100px";
+miboton1.style.height="100px";
+var cuadroDeTexto=document.getElementById("micuadro");
+miboton.focus();
+cuadroDeTexto.style.height="50px";
+cuadroDeTexto.style.backgroundColor="red";
+cuadroDeTexto.style.fontSize="20px";
+cuadroDeTexto.value="escriba aqui su nombre";
+
+</script>
+
+</body>
+</html>
